@@ -1,4 +1,3 @@
-// Ваш класс Student
 package bitlab.TO.G1.thymeleaf1;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -12,8 +11,6 @@ public class Student {
     private String surname;
     private int exam;
     private String mark;
-
-    // Конструктор с автоматическим установлением ID
     public Student(String name, String surname, int exam, String mark) {
         this.id = idCounter++ - 1;
         this.name = name;
@@ -21,8 +18,6 @@ public class Student {
         this.exam = exam;
         this.mark = mark;
     }
-
-    // Конструкторы
 
     public Long getId() {
         return id;

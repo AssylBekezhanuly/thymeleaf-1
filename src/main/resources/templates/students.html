@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Students</title>
-    <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Your custom styles -->
+
     <style>
         body {
-            padding-top: 56px; /* Fix for fixed navbar */
+            padding-top: 56px;
         }
 
         .container {
@@ -50,7 +50,7 @@
         </tr>
         </thead>
         <tbody>
-        <!-- Loop through your students and display them here -->
+
         <tr th:each="student : ${students}" th:class="${student.mark == 'F'} ? 'text-danger'">
             <td th:text="${student.id}"></td>
             <td th:text="${student.name}"></td>
@@ -62,7 +62,6 @@
     </table>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
