@@ -1,4 +1,3 @@
-// ExamController.java
 package bitlab.TO.G1.thymeleaf1.controller;
 
 import org.springframework.stereotype.Controller;
